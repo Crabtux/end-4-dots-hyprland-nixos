@@ -36,6 +36,8 @@ in
       xdg.configFile."Kvantum/Colloid".source = "${illogical-impulse-dotfiles}/.config/Kvantum/Colloid";
       xdg.configFile."matugen".source = "${illogical-impulse-dotfiles}/.config/matugen";
       xdg.configFile."mpv/mpv.conf".source = "${illogical-impulse-dotfiles}/.config/mpv/mpv.conf";
+    })
+    (mkIf (config.illogical-impulse.enable && config.illogical-impulse.dotfiles.fish.enable) {
       xdg.configFile."fish/config.fish".source = "${illogical-impulse-dotfiles}/.config/fish/config.fish";
     })
     (mkIf (config.illogical-impulse.enable && config.illogical-impulse.dotfiles.kitty.enable) {
