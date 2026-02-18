@@ -18,7 +18,7 @@ in
     home.sessionVariables.ILLOGICAL_IMPULSE_VIRTUAL_ENV = "~/.local/state/quickshell/.venv";
 
     home.packages = with pkgs; [
-      inputs.quickshell.packages.${pkgs.system}.default
+      quickshell
       kdePackages.kdialog
       kdePackages.qt5compat
       kdePackages.qtbase
