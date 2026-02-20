@@ -33,7 +33,7 @@ in
       jq
       # meson
       fish
-      foot
+      # foot
       fuzzel
       matugen
       mpv
